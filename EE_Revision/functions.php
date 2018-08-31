@@ -42,7 +42,7 @@ function checkUser($pseudo, $pwd) {
     //echo $sql. " ".$pseudo. " ".$pwd;
     if ($request->execute(array(
                 'pseudo' => $pseudo,
-                'pwd' => $pwd))) {
+                'pwd' => sha1($pwd)))) {
         $result = $request->fetch(PDO::FETCH_ASSOC);
         return $result;
     } else {
@@ -81,5 +81,22 @@ function userInformation($pseudo) {
         return $result;
     } else {
         return null;
+    }
+}
+
+function pseudoExist($pseudo) {
+    $db = connectDb();
+
+    $sql = "SELECT login"
+            . " FROM users"
+            . " WHERE login = :pseudo";
+    $request = $db->prepare($sql);
+    //echo $sql. " ".$pseudo;
+    if ($request->execute(array(
+                'pseudo' => $pseudo))) {
+        $result = $request->fetch(PDO::FETCH_ASSOC);
+        return $result;
+    } else {
+        return NULL;
     }
 }
