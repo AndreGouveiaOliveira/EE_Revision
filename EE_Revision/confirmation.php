@@ -7,6 +7,6 @@ include_once 'functions.php';?>
         <title></title>
     </head>
     <body>
-        <div>Bonjour <?php $_SESSION["prenom"]; $_SESSION["nom"]; ?> , vous êtes connecté !</div> 
+        <div>Bonjour <?=$_SESSION["prenom"]." ".$_SESSION["nom"] ?> , vous êtes connecté !</div> 
     </body>
 </html>

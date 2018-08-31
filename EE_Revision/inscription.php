@@ -17,7 +17,7 @@ if (filter_has_var(INPUT_POST, 'submit')) {
 
     if ($pwd == $validationPwd) {
         if (!empty($pseudo) || !empty($nom) || !empty($prenom) || !empty($pwd) || !empty($validationPwd)) {
-            
+            createUser($prenom, $nom, $pseudo, $pwd);
         }
     }
 }

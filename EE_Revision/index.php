@@ -17,8 +17,8 @@ if (filter_has_var(INPUT_POST, 'submit')) {
         if (empty($result)) {
             $error = "";
         } else {
-            $_SESSION["nom"] = userNom($pseudo)["name"];
-            $_SESSION["prenom"] = userPrenom($pseudo)["surname"];
+            $_SESSION["nom"] = userInformation($pseudo)["name"];
+            $_SESSION["prenom"] = userInformation($pseudo)["surname"];
             //echo $_SESSION["nom"] . " " . $_SESSION["prenom"];
             header("Location: confirmation.php");
             exit();
