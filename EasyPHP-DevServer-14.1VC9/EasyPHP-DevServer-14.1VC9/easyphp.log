@@ -1,0 +1,111 @@
+25/08 09:02:48 EasyPHP EasyPHP Démarrage des serveurs
+25/08 09:02:49 EasyPHP Apache CreateProcess "C:\Tests\EASYPH~1.1VC\binaries\apache\bin\eds-httpd.exe"
+25/08 09:02:49 EasyPHP CreateProcess "C:\Tests\EASYPH~1.1VC\binaries\mysql\bin\eds-mysqld.exe --defaults-file="C:\Tests\EASYPH~1.1VC\binaries\mysql\my.ini" --language=english"
+25/08 09:02:54 EasyPHP EasyPHP Vérifier la version
+25/08 09:04:10 EasyPHP EasyPHP Arret des serveurs
+25/08 09:04:10 EasyPHP Apache stop event: ap5572_shutdown
+25/08 09:04:11 EasyPHP MySqlSutdown event = MySQLShutdown5616
+25/08 09:04:11 EasyPHP End EasyPHP...
+23/01 10:20:51 EasyPHP EasyPHP Démarrage des serveurs
+23/01 10:20:52 EasyPHP Apache CreateProcess "C:\Users\ANDRE_~1\Desktop\EASYPH~1.1VC\binaries\apache\bin\eds-httpd.exe"
+23/01 10:20:52 EasyPHP CreateProcess "C:\Users\ANDRE_~1\Desktop\EASYPH~1.1VC\binaries\mysql\bin\eds-mysqld.exe --defaults-file="C:\Users\ANDRE_~1\Desktop\EASYPH~1.1VC\binaries\mysql\my.ini" --language=english"
+23/01 10:20:57 EasyPHP EasyPHP Vérifier la version
+23/01 11:40:37 EasyPHP EasyPHP Arret des serveurs
+23/01 11:40:37 EasyPHP Apache stop event: ap8044_shutdown
+23/01 11:40:37 EasyPHP Apache::StopExe stop event ap8044_shutdown fail : 2
+23/01 11:40:38 EasyPHP MySqlSutdown event = MySQLShutdown13656
+23/01 11:40:38 EasyPHP MySqlSutdown event open fail = 2
+23/01 11:40:38 EasyPHP End EasyPHP...
+30/01 08:17:47 EasyPHP EasyPHP Démarrage des serveurs
+30/01 08:17:49 EasyPHP Apache CreateProcess "C:\Users\ANDRE_~1\Desktop\EASYPH~1.1VC\binaries\apache\bin\eds-httpd.exe"
+30/01 08:17:49 EasyPHP CreateProcess "C:\Users\ANDRE_~1\Desktop\EASYPH~1.1VC\binaries\mysql\bin\eds-mysqld.exe --defaults-file="C:\Users\ANDRE_~1\Desktop\EASYPH~1.1VC\binaries\mysql\my.ini" --language=english"
+30/01 08:17:54 EasyPHP EasyPHP Vérifier la version
+30/01 11:39:45 EasyPHP EasyPHP Arret des serveurs
+30/01 11:39:45 EasyPHP Apache stop event: ap18176_shutdown
+30/01 11:39:45 EasyPHP Apache::StopExe stop event ap18176_shutdown fail : 2
+30/01 11:39:46 EasyPHP MySqlSutdown event = MySQLShutdown13776
+30/01 11:39:46 EasyPHP MySqlSutdown event open fail = 2
+30/01 11:39:46 EasyPHP End EasyPHP...
+06/02 08:34:13 EasyPHP EasyPHP Démarrage des serveurs
+06/02 08:34:14 EasyPHP Apache CreateProcess "C:\Users\ANDRE_~1\Desktop\EASYPH~1.1VC\binaries\apache\bin\eds-httpd.exe"
+06/02 08:34:14 EasyPHP CreateProcess "C:\Users\ANDRE_~1\Desktop\EASYPH~1.1VC\binaries\mysql\bin\eds-mysqld.exe --defaults-file="C:\Users\ANDRE_~1\Desktop\EASYPH~1.1VC\binaries\mysql\my.ini" --language=english"
+06/02 08:34:19 EasyPHP EasyPHP Vérifier la version
+06/02 11:40:51 EasyPHP EasyPHP Arret des serveurs
+06/02 11:40:51 EasyPHP Apache stop event: ap11472_shutdown
+06/02 11:40:51 EasyPHP Apache::StopExe stop event ap11472_shutdown fail : 2
+06/02 11:40:52 EasyPHP MySqlSutdown event = MySQLShutdown7888
+06/02 11:40:52 EasyPHP MySqlSutdown event open fail = 2
+06/02 11:40:52 EasyPHP End EasyPHP...
+20/02 08:23:44 EasyPHP EasyPHP Démarrage des serveurs
+20/02 08:23:46 EasyPHP Apache CreateProcess "C:\Users\ANDRE_~1\Desktop\EASYPH~1.1VC\binaries\apache\bin\eds-httpd.exe"
+20/02 08:23:46 EasyPHP CreateProcess "C:\Users\ANDRE_~1\Desktop\EASYPH~1.1VC\binaries\mysql\bin\eds-mysqld.exe --defaults-file="C:\Users\ANDRE_~1\Desktop\EASYPH~1.1VC\binaries\mysql\my.ini" --language=english"
+20/02 08:23:51 EasyPHP EasyPHP Vérifier la version
+20/02 11:41:53 EasyPHP EasyPHP Arret des serveurs
+20/02 11:41:53 EasyPHP Apache stop event: ap10552_shutdown
+20/02 11:41:53 EasyPHP Apache::StopExe stop event ap10552_shutdown fail : 2
+20/02 11:41:53 EasyPHP MySqlSutdown event = MySQLShutdown5096
+20/02 11:41:53 EasyPHP MySqlSutdown event open fail = 2
+20/02 11:41:53 EasyPHP End EasyPHP...
+27/02 08:30:44 EasyPHP EasyPHP Démarrage des serveurs
+27/02 08:30:45 EasyPHP Apache CreateProcess "C:\Users\ANDRE_~1\Desktop\EASYPH~1.1VC\binaries\apache\bin\eds-httpd.exe"
+27/02 08:30:45 EasyPHP CreateProcess "C:\Users\ANDRE_~1\Desktop\EASYPH~1.1VC\binaries\mysql\bin\eds-mysqld.exe --defaults-file="C:\Users\ANDRE_~1\Desktop\EASYPH~1.1VC\binaries\mysql\my.ini" --language=english"
+27/02 08:30:50 EasyPHP EasyPHP Vérifier la version
+27/02 11:40:22 EasyPHP EasyPHP Arret des serveurs
+27/02 11:40:22 EasyPHP Apache stop event: ap11080_shutdown
+27/02 11:40:22 EasyPHP Apache::StopExe stop event ap11080_shutdown fail : 2
+27/02 11:40:23 EasyPHP MySqlSutdown event = MySQLShutdown4528
+27/02 11:40:23 EasyPHP MySqlSutdown event open fail = 2
+27/02 11:40:23 EasyPHP End EasyPHP...
+02/03 08:44:34 EasyPHP EasyPHP Démarrage des serveurs
+02/03 08:44:35 EasyPHP Apache CreateProcess "C:\Users\GOUVEI~1\DOWNLO~1\EASYPH~1.1VC\EASYPH~1.1VC\binaries\apache\bin\eds-httpd.exe"
+02/03 08:44:35 EasyPHP CreateProcess "C:\Users\GOUVEI~1\DOWNLO~1\EASYPH~1.1VC\EASYPH~1.1VC\binaries\mysql\bin\eds-mysqld.exe --defaults-file="C:\Users\GOUVEI~1\DOWNLO~1\EASYPH~1.1VC\EASYPH~1.1VC\binaries\mysql\my.ini" --language=english"
+02/03 08:44:40 EasyPHP EasyPHP Vérifier la version
+02/03 11:39:56 EasyPHP EasyPHP Arret des serveurs
+02/03 11:39:56 EasyPHP Apache stop event: ap1940_shutdown
+02/03 11:39:57 EasyPHP MySqlSutdown event = MySQLShutdown5776
+02/03 11:39:57 EasyPHP MySqlSutdown event open fail = 2
+02/03 11:39:57 EasyPHP End EasyPHP...
+06/03 10:40:58 EasyPHP EasyPHP Démarrage des serveurs
+06/03 10:41:00 EasyPHP Apache CreateProcess "C:\Users\GOUVEI~1\DOWNLO~1\EASYPH~1.1VC\EASYPH~1.1VC\binaries\apache\bin\eds-httpd.exe"
+06/03 10:41:00 EasyPHP CreateProcess "C:\Users\GOUVEI~1\DOWNLO~1\EASYPH~1.1VC\EASYPH~1.1VC\binaries\mysql\bin\eds-mysqld.exe --defaults-file="C:\Users\GOUVEI~1\DOWNLO~1\EASYPH~1.1VC\EASYPH~1.1VC\binaries\mysql\my.ini" --language=english"
+06/03 10:41:05 EasyPHP EasyPHP Vérifier la version
+30/08 10:14:44 EasyPHP EasyPHP Démarrage des serveurs
+30/08 10:14:45 EasyPHP Apache  Le port d'Apache (80) est déjà occupé par une autre application ! Fermez cette application et relancez le serveur. Pour fermer cette aplication : ouvrir <répertoire easyphp>/binaries/tools/cports/cports.exe, trouver la ligne avec le port déjà utilisé dans la colonne "Local Port", click droit et choisir "Kill Processes Of Selected Ports".
+30/08 10:14:48 EasyPHP CreateProcess "C:\Users\Gouveiaa\DOWNLO~1\EASYPH~1.1VC\EASYPH~1.1VC\binaries\mysql\bin\eds-mysqld.exe --defaults-file="C:\Users\Gouveiaa\DOWNLO~1\EASYPH~1.1VC\EASYPH~1.1VC\binaries\mysql\my.ini" --language=english"
+30/08 10:14:53 EasyPHP EasyPHP Vérifier la version
+30/08 10:14:57 EasyPHP Apache  Le port d'Apache (80) est déjà occupé par une autre application ! Fermez cette application et relancez le serveur. Pour fermer cette aplication : ouvrir <répertoire easyphp>/binaries/tools/cports/cports.exe, trouver la ligne avec le port déjà utilisé dans la colonne "Local Port", click droit et choisir "Kill Processes Of Selected Ports".
+30/08 10:15:12 EasyPHP Apache  Le port d'Apache (80) est déjà occupé par une autre application ! Fermez cette application et relancez le serveur. Pour fermer cette aplication : ouvrir <répertoire easyphp>/binaries/tools/cports/cports.exe, trouver la ligne avec le port déjà utilisé dans la colonne "Local Port", click droit et choisir "Kill Processes Of Selected Ports".
+30/08 10:18:58 EasyPHP Apache  Le port d'Apache (80) est déjà occupé par une autre application ! Fermez cette application et relancez le serveur. Pour fermer cette aplication : ouvrir <répertoire easyphp>/binaries/tools/cports/cports.exe, trouver la ligne avec le port déjà utilisé dans la colonne "Local Port", click droit et choisir "Kill Processes Of Selected Ports".
+30/08 10:19:30 EasyPHP EasyPHP Arret des serveurs
+30/08 10:19:30 EasyPHP MySqlSutdown event = MySQLShutdown83944
+30/08 10:19:30 EasyPHP End EasyPHP...
+30/08 10:19:57 EasyPHP EasyPHP Démarrage des serveurs
+30/08 10:19:57 EasyPHP Apache  Le port d'Apache (80) est déjà occupé par une autre application ! Fermez cette application et relancez le serveur. Pour fermer cette aplication : ouvrir <répertoire easyphp>/binaries/tools/cports/cports.exe, trouver la ligne avec le port déjà utilisé dans la colonne "Local Port", click droit et choisir "Kill Processes Of Selected Ports".
+30/08 10:19:59 EasyPHP CreateProcess "C:\Users\Gouveiaa\Desktop\EASYPH~1.1VC\EASYPH~1.1VC\binaries\mysql\bin\eds-mysqld.exe --defaults-file="C:\Users\Gouveiaa\Desktop\EASYPH~1.1VC\EASYPH~1.1VC\binaries\mysql\my.ini" --language=english"
+30/08 10:20:04 EasyPHP EasyPHP Vérifier la version
+30/08 10:20:24 EasyPHP Apache  Le port d'Apache (80) est déjà occupé par une autre application ! Fermez cette application et relancez le serveur. Pour fermer cette aplication : ouvrir <répertoire easyphp>/binaries/tools/cports/cports.exe, trouver la ligne avec le port déjà utilisé dans la colonne "Local Port", click droit et choisir "Kill Processes Of Selected Ports".
+30/08 10:29:23 EasyPHP Apache  Le port d'Apache (80) est déjà occupé par une autre application ! Fermez cette application et relancez le serveur. Pour fermer cette aplication : ouvrir <répertoire easyphp>/binaries/tools/cports/cports.exe, trouver la ligne avec le port déjà utilisé dans la colonne "Local Port", click droit et choisir "Kill Processes Of Selected Ports".
+30/08 10:31:47 EasyPHP Apache CreateProcess "C:\Users\Gouveiaa\Desktop\EASYPH~1.1VC\EASYPH~1.1VC\binaries\apache\bin\eds-httpd.exe"
+30/08 10:35:47 EasyPHP Apache  Le fichier de configuration a été modifié
+30/08 10:35:47 EasyPHP Apache restart event: ap80596_restart
+30/08 10:53:41 EasyPHP Apache  Le fichier de configuration a été modifié
+30/08 10:53:41 EasyPHP Apache restart event: ap80596_restart
+30/08 10:55:04 EasyPHP Apache  Le fichier de configuration a été modifié
+30/08 10:55:04 EasyPHP Apache restart event: ap80596_restart
+30/08 16:44:45 EasyPHP EasyPHP Arret des serveurs
+30/08 16:44:45 EasyPHP Apache stop event: ap80596_shutdown
+30/08 16:44:45 EasyPHP Apache::StopExe stop event ap80596_shutdown fail : 2
+30/08 16:44:46 EasyPHP MySqlSutdown event = MySQLShutdown73936
+30/08 16:44:46 EasyPHP MySqlSutdown event open fail = 2
+30/08 16:44:46 EasyPHP End EasyPHP...
+31/08 07:40:34 EasyPHP EasyPHP Démarrage des serveurs
+31/08 07:40:43 EasyPHP Apache CreateProcess "C:\Users\Gouveiaa\Desktop\EASYPH~1.1VC\EASYPH~1.1VC\binaries\apache\bin\eds-httpd.exe"
+31/08 07:40:43 EasyPHP CreateProcess "C:\Users\Gouveiaa\Desktop\EASYPH~1.1VC\EASYPH~1.1VC\binaries\mysql\bin\eds-mysqld.exe --defaults-file="C:\Users\Gouveiaa\Desktop\EASYPH~1.1VC\EASYPH~1.1VC\binaries\mysql\my.ini" --language=english"
+31/08 07:40:48 EasyPHP EasyPHP Vérifier la version
+31/08 11:22:48 EasyPHP EasyPHP Arret des serveurs
+31/08 11:22:48 EasyPHP Apache stop event: ap68888_shutdown
+31/08 11:22:49 EasyPHP MySqlSutdown event = MySQLShutdown103640
+31/08 11:22:50 EasyPHP ServerBase::TimerProc : GetProcessVersion MySQL (pid: 103640) error 5
+31/08 11:22:50 EasyPHP ServerBase::TimerProc : GetProcessVersion Apache (pid: 68888) error 5
+31/08 11:22:53 EasyPHP EasyPHP Arret des serveurs
+31/08 11:22:53 EasyPHP End EasyPHP...
