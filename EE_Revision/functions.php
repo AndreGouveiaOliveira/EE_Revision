@@ -15,6 +15,12 @@ if (isset($_SESSION["name"]) == NULL) {
 if (isset($_SESSION["surname"]) == NULL) {
     $_SESSION["surname"] = "";
 }
+if (isset($_SESSION["login"]) == NULL) {
+    $_SESSION["login"] = "";
+}
+if (isset($_SESSION["idUser"]) == NULL) {
+    $_SESSION["idUser"] = "";
+}
 
 function connectDb() {
     $server = '127.0.0.1';
@@ -70,7 +76,7 @@ function createUser($surname, $name, $login, $pwd) {
 function userInformation($login) {
     $db = connectDb();
 
-    $sql = "SELECT name,surname"
+    $sql = "SELECT name,surname,idUser"
             . " FROM users"
             . " WHERE login = :login";
     $request = $db->prepare($sql);
@@ -95,6 +101,45 @@ function pseudoExist($login) {
     if ($request->execute(array(
                 'login' => $login))) {
         $result = $request->fetch(PDO::FETCH_ASSOC);
+        return $result;
+    } else {
+        return NULL;
+    }
+}
+
+function logout(){
+    $_SESSION = array();
+    session_destroy();
+    header("Location: index.php");
+    exit;
+}
+
+function insertPost($title,$description,$idUser){
+    $db = connectDb();
+
+    $sql = "INSERT INTO news(title,description,idUser)"
+            . " VALUES(:title, :description, :idUser)";
+    $request = $db->prepare($sql);
+    if ($request->execute(array(
+                'title' => $title,
+                'description' => $description,
+                'idUser' => $idUser))) {
+        return $db->lastInsertId();
+    } else {
+        echo "<h3>Le post n'a pas pu être inséré</h3>";
+    }
+}
+
+function getPosts($idUser){
+    $db = connectDb();
+
+    $sql = "SELECT title, description"
+            . " FROM news"
+            . " WHERE idUser = :idUser";
+    $request = $db->prepare($sql);
+    if ($request->execute(array(
+                'idUser' => $idUser))) {
+        $result = $request->fetchAll(PDO::FETCH_ASSOC);
         return $result;
     } else {
         return NULL;

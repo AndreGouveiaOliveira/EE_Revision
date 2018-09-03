@@ -16,11 +16,11 @@ if (filter_has_var(INPUT_POST, 'submit')) {
     $validationPwd = filter_input(INPUT_POST, "validationPwd", FILTER_SANITIZE_STRING);
 
     if ($pwd === $validationPwd) {
-        if (!empty($pseudo) && !empty($name) && !empty($surname) && !empty($pwd) && !empty($validationPwd)) {
+        if (!empty($login) && !empty($name) && !empty($surname) && !empty($pwd) && !empty($validationPwd)) {
             if (pseudoExist($login) == NULL) {
                 createUser($surname, $name, $login, $pwd);
             } else {
-                //message erreur si utilisateur existe deja
+                echo "<h3>L'utilisateur est deja utiliser</h3>";
             }
         }
     }

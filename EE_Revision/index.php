@@ -19,6 +19,8 @@ if (filter_has_var(INPUT_POST, 'submit')) {
         } else {
             $_SESSION["name"] = userInformation($login)["name"];
             $_SESSION["surname"] = userInformation($login)["surname"];
+            $_SESSION["idUser"] = userInformation($login)["idUser"];
+            $_SESSION["login"] = $login;
             //echo $_SESSION["name"] . " " . $_SESSION["surname"];
             header("Location: main.php");
             exit();
