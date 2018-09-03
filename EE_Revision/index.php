@@ -10,20 +10,21 @@
 require_once 'functions.php';
 
 if (filter_has_var(INPUT_POST, 'submit')) {
-    $pseudo = filter_input(INPUT_POST, "pseudo", FILTER_SANITIZE_STRING);
+    $login = filter_input(INPUT_POST, "login", FILTER_SANITIZE_STRING);
     $pwd = filter_input(INPUT_POST, "pwd", FILTER_SANITIZE_STRING);
-    if (!empty($pseudo) || !empty($pwd)) {
-        $result = checkUser($pseudo, $pwd);
+    if (!empty($login) || !empty($pwd)) {
+        $result = checkUser($login, $pwd);
         if (empty($result)) {
             $error = "";
         } else {
-            $_SESSION["nom"] = userInformation($pseudo)["name"];
-            $_SESSION["prenom"] = userInformation($pseudo)["surname"];
-            //echo $_SESSION["nom"] . " " . $_SESSION["prenom"];
-            header("Location: confirmation.php");
+            $_SESSION["name"] = userInformation($login)["name"];
+            $_SESSION["surname"] = userInformation($login)["surname"];
+            //echo $_SESSION["name"] . " " . $_SESSION["surname"];
+            header("Location: main.php");
             exit();
         }
     }
+    
 }
 ?>
 
@@ -32,8 +33,16 @@ if (filter_has_var(INPUT_POST, 'submit')) {
         <meta charset="UTF-8">
     </head>
     <body>
-        <?php
-        include_once 'connection.php';
-        ?>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Connection</legend>
+                <div>Identifiant:</div>
+                <input type="text" id="login" name="login" value="<?php if (empty($login)) {echo "";} else { echo $login;} ?>">
+                <div>Mot de passe:</div>
+                <input type="password" id="pwd" name="pwd" value=""><br>
+                <input type="submit" name="submit">
+            </fieldset>
+        </form>
+        <a href="inscription.php">Pas encore inscrit?</a>
     </body>
 </html>

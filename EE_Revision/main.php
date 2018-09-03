@@ -6,7 +6,7 @@
         <title></title>
     </head>
     <body>
-        <div>Bonjour <?=$_SESSION["prenom"]." ".$_SESSION["nom"] ?>, vous êtes connecté !</div> 
+        <div>Bonjour <?=$_SESSION["surname"]." ".$_SESSION["name"] ?>, vous êtes connecté !</div> 
         <form>
             <fieldset>
                 <legend>Nouveau post</legend>

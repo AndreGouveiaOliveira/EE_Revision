@@ -9,16 +9,16 @@
  */
 session_start();
 
-if (isset($_SESSION["nom"]) == NULL) {
-    $_SESSION["nom"] = "";
+if (isset($_SESSION["name"]) == NULL) {
+    $_SESSION["name"] = "";
 }
-if (isset($_SESSION["prenom"]) == NULL) {
-    $_SESSION["prenom"] = "";
+if (isset($_SESSION["surname"]) == NULL) {
+    $_SESSION["surname"] = "";
 }
 
 function connectDb() {
     $server = '127.0.0.1';
-    $pseudo = 'root';
+    $login = 'root';
     $pwd = '';
     $dbname = 'forum';
 
@@ -26,22 +26,22 @@ function connectDb() {
 
     if ($db === null) {
         $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
-        $db = new PDO("mysql:host=$server;dbname=$dbname", $pseudo, $pwd, $pdo_options);
+        $db = new PDO("mysql:host=$server;dbname=$dbname", $login, $pwd, $pdo_options);
         $db->exec('SET CHARACTER SET utf8');
     }
     return $db;
 }
 
-function checkUser($pseudo, $pwd) {
+function checkUser($login, $pwd) {
     $db = connectDb();
 
     $sql = "SELECT login, password"
             . " FROM users"
-            . " WHERE login = :pseudo AND password = :pwd";
+            . " WHERE login = :login AND password = :pwd";
     $request = $db->prepare($sql);
     //echo $sql. " ".$pseudo. " ".$pwd;
     if ($request->execute(array(
-                'pseudo' => $pseudo,
+                'login' => $login,
                 'pwd' => sha1($pwd)))) {
         $result = $request->fetch(PDO::FETCH_ASSOC);
         return $result;
@@ -50,16 +50,16 @@ function checkUser($pseudo, $pwd) {
     }
 }
 
-function createUser($prenom, $nom, $pseudo, $pwd) {
+function createUser($surname, $name, $login, $pwd) {
     $db = connectDb();
 
     $sql = "INSERT INTO users(surname,name,login,password)"
-            . " VALUES(:prenom, :nom, :pseudo, :pwd)";
+            . " VALUES(:surname, :name, :login, :pwd)";
     $request = $db->prepare($sql);
     if ($request->execute(array(
-                'prenom' => $prenom,
-                'nom' => $nom,
-                'pseudo' => $pseudo,
+                'surname' => $surname,
+                'name' => $name,
+                'login' => $login,
                 'pwd' => sha1($pwd)))) {
         return $db->lastInsertId();
     } else {
@@ -67,16 +67,16 @@ function createUser($prenom, $nom, $pseudo, $pwd) {
     }
 }
 
-function userInformation($pseudo) {
+function userInformation($login) {
     $db = connectDb();
 
     $sql = "SELECT name,surname"
             . " FROM users"
-            . " WHERE login = :pseudo";
+            . " WHERE login = :login";
     $request = $db->prepare($sql);
     //echo $sql. " ".$pseudo;
     if ($request->execute(array(
-                'pseudo' => $pseudo))) {
+                'login' => $login))) {
         $result = $request->fetch(PDO::FETCH_ASSOC);
         return $result;
     } else {
@@ -84,16 +84,16 @@ function userInformation($pseudo) {
     }
 }
 
-function pseudoExist($pseudo) {
+function pseudoExist($login) {
     $db = connectDb();
 
     $sql = "SELECT login"
             . " FROM users"
-            . " WHERE login = :pseudo";
+            . " WHERE login = :login";
     $request = $db->prepare($sql);
     //echo $sql. " ".$pseudo;
     if ($request->execute(array(
-                'pseudo' => $pseudo))) {
+                'login' => $login))) {
         $result = $request->fetch(PDO::FETCH_ASSOC);
         return $result;
     } else {

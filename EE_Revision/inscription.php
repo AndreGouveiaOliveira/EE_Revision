@@ -1,4 +1,3 @@
-<meta charset="UTF-8">
 <?php
 /**
  * Auteur : Gouveia de OLiveira André
@@ -10,21 +9,45 @@
 require_once 'functions.php';
 
 if (filter_has_var(INPUT_POST, 'submit')) {
-    $pseudo = filter_input(INPUT_POST, "pseudo", FILTER_SANITIZE_STRING);
-    $nom = filter_input(INPUT_POST, "nom", FILTER_SANITIZE_STRING);
-    $prenom = filter_input(INPUT_POST, "prenom", FILTER_SANITIZE_STRING);
+    $login = filter_input(INPUT_POST, "login", FILTER_SANITIZE_STRING);
+    $name = filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING);
+    $surname = filter_input(INPUT_POST, "surname", FILTER_SANITIZE_STRING);
     $pwd = filter_input(INPUT_POST, "pwd", FILTER_SANITIZE_STRING);
     $validationPwd = filter_input(INPUT_POST, "validationPwd", FILTER_SANITIZE_STRING);
-    
+
     if ($pwd === $validationPwd) {
-        if (!empty($pseudo) && !empty($nom) && !empty($prenom) && !empty($pwd) && !empty($validationPwd)) {
-            if (pseudoExist($pseudo) == NULL) {
-                createUser($prenom, $nom, $pseudo, $pwd);
+        if (!empty($pseudo) && !empty($name) && !empty($surname) && !empty($pwd) && !empty($validationPwd)) {
+            if (pseudoExist($login) == NULL) {
+                createUser($surname, $name, $login, $pwd);
             } else {
                 //message erreur si utilisateur existe deja
             }
         }
     }
 }
+?>
 
-include_once 'inscriptionFormulaire.php';
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Inscription</legend>
+                <div>Prénom:</div>
+                <input type="text" id="surname" name="surname" value="<?php if (empty($surname)) {echo "";} else { echo $surname;} ?>">
+                <div>Nom:</div>
+                <input type="text" id="name" name="name" value="<?php if (empty($name)) {echo "";} else { echo $name;} ?>">
+                <div>Identifiant:</div>
+                <input type="text" id="login" name="login" value="<?php if (empty($login)) {echo "";} else { echo $login;} ?>">
+                <div>Mot de passe:</div>
+                <input type="password" id="pwd" name="pwd" value="">
+                <div>Validation du mot de passe:</div>
+                <input type="password" id="validationPwd" name="validationPwd" value=""><br>
+                <input type="submit" name="submit" value="Valider" >
+            </fieldset>
+        </form>
+        <a href="index.php">Retour sur connection</a>
+    </body>
+</html>

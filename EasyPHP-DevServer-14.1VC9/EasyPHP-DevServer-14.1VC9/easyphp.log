@@ -109,3 +109,7 @@
 31/08 11:22:50 EasyPHP ServerBase::TimerProc : GetProcessVersion Apache (pid: 68888) error 5
 31/08 11:22:53 EasyPHP EasyPHP Arret des serveurs
 31/08 11:22:53 EasyPHP End EasyPHP...
+03/09 07:37:10 EasyPHP EasyPHP Démarrage des serveurs
+03/09 07:37:11 EasyPHP Apache CreateProcess "C:\Users\Gouveiaa\Desktop\EE_REV~1\EASYPH~1.1VC\EASYPH~1.1VC\binaries\apache\bin\eds-httpd.exe"
+03/09 07:37:11 EasyPHP CreateProcess "C:\Users\Gouveiaa\Desktop\EE_REV~1\EASYPH~1.1VC\EASYPH~1.1VC\binaries\mysql\bin\eds-mysqld.exe --defaults-file="C:\Users\Gouveiaa\Desktop\EE_REV~1\EASYPH~1.1VC\EASYPH~1.1VC\binaries\mysql\my.ini" --language=english"
+03/09 07:37:16 EasyPHP EasyPHP Vérifier la version
